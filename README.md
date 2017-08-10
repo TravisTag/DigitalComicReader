@@ -23,8 +23,8 @@ Relaxed in this context means that a pixel is considered connected if it is with
 4. Take convex hulls of each pixel assuming they're a rectangle. 
 Need to take a basic linear geometric convex hull to account for non-rectangles
 
-![alt text](./readmeimages/16out.png?raw=true)
-![alt text](./readmeimages/62out.png?raw=true)
+![alt text](readmeimages/16out.png?raw=true)
+![alt text](readmeimages/62out.png?raw=true)
 
 
 Tasks to be completed:
