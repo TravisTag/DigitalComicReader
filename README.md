@@ -17,10 +17,10 @@ Currently working on the details of panel detection and ordering.
 Have achieved decent panel detection using the following:
 
 1. Background segmentation by using a relaxed connected component search with seeds on the border of the image. 
-Relaxed in this context means that a pixel is considered connected if it is within a threshold of the value of the current pixel.
+Relaxed in this context means that a pixel is considered connected if it is within a threshold of the value of the current pixel, rather than needing to have the same value.
 2. Convert to binary foreground/background image
 3. Clean up small connections between panels using morphological erosion and dilation with a 3x3 square mask
-4. Take convex hulls of each pixel assuming they're a rectangle. 
+4. Take convex hulls of each panel assuming they're a rectangle. 
 Need to take a basic linear geometric convex hull to account for non-rectangles
 
 ![alt text](https://github.com/TravisTag/DigitalComicReader/raw/master/images/readmeimages/16out.png)
