@@ -37,6 +37,7 @@ Tasks to be completed:
       - Clustering will also take care of differences in y-values of a few pixels due to the morphological operations
 - Recognition of non-paneled areas. i.e. find areas of the page that are not covered by recognized "panels" and consider them as panels. A first step towards recognizing non-traditional panel art.
 - Text recognition: use an open-source library for text recognition and utilize this to discover speech bubbles, possibly through connected components
+- Possible parameter optimization method for panel detection. Likely a brute force search over a small area through the parameter space for things like background variance threshold, dilation/erosion size and iterations, etc.
 
 
 ## Implementation tasks
