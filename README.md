@@ -24,11 +24,17 @@ Relaxed in this context means that a pixel is considered connected if it is with
 Need to take a basic linear geometric convex hull to account for non-rectangles
 
 ![alt text](https://github.com/TravisTag/DigitalComicReader/raw/master/images/readmeimages/16out.png)
+
+Using a non-white background:
+
 ![alt text](https://github.com/TravisTag/DigitalComicReader/raw/master/images/readmeimages/62out.png)
 
 
 Tasks to be completed:
 - Panel ordering: given the corners and sizes of panels, determine the correct ordering
+  - One idea is to use only the coordinates for the top-left corners of the rectangles (or rectangular convex hull). Cluster the y-values to create "rows", then go left to right within each row, starting from the top. This seems to accurately capture the reading process of comic panels.
+      - Clustering can be done using kernel density esimation, or another 1-dimensional "clustering" method
+      - Clustering will also take care of differences in y-values of a few pixels due to the morphological operations
 - Text recognition: use an open-source library for text recognition and utilize this to discover speech bubbles, possibly through connected components
 
 
