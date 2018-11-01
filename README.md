@@ -35,6 +35,7 @@ Tasks to be completed:
   - One idea is to use only the coordinates for the top-left corners of the rectangles (or rectangular convex hull). Cluster the y-values to create "rows", then go left to right within each row, starting from the top. This seems to accurately capture the reading process of comic panels.
       - Clustering can be done using kernel density esimation, or another 1-dimensional "clustering" method
       - Clustering will also take care of differences in y-values of a few pixels due to the morphological operations
+- Recognition of non-paneled areas. i.e. find areas of the page that are not covered by recognized "panels" and consider them as panels. A first step towards recognizing non-traditional panel art.
 - Text recognition: use an open-source library for text recognition and utilize this to discover speech bubbles, possibly through connected components
 
 
